@@ -1,0 +1,16 @@
+/* src/styles/Header.css */
+
+.header {
+    width: 627px;
+    height: 103px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 48px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 72px;
+    word-wrap: break-word;
+    top: 152px;
+    left: 443px;
+}

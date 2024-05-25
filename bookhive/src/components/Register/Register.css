@@ -1,0 +1,84 @@
+
+.register-container {
+    width: 100%; /* Full width of the parent */
+    margin: 1px;
+    padding: 1px;
+    background-color: #ffffff;
+    align-content: center;
+    font-family: sans-serif;
+    
+}
+
+/* Headings */
+.heading {
+    text-align: center;
+    margin: none;
+    color: black;
+    position: top;
+}
+.heading2 {
+    text-align: center;
+    color: black;
+    margin: none;
+}
+
+/* Form */
+.RegForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin:10 ; 
+}
+
+/* Labels */
+.label1 {
+    margin-bottom: 10px;
+    color: black;
+}
+.label2 {
+    margin-bottom: 10px;
+    color: black;
+}
+.label3 {
+    margin-bottom: 10px;
+    color: black;
+}
+.label4 {
+    margin-bottom: 10px;
+    color: black;
+}
+.label5 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Input fields */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Ensure inputs take full width within container */
+    max-width: 400px; /* Limit input field width for better appearance */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button */
+.RegBu{
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%; /* Full width within container */
+    max-width: 200px; /* Limit button width for better appearance */
+}
+.Logo{
+
+}
+
+

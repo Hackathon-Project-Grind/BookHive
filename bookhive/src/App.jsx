@@ -1,11 +1,13 @@
 import Login from './components/Login/Login';
 import Header from './components/Login/Header';
+import Register from './components/Register/Register'
 
 const App = () => {
   return (
     <div>
-      <Login />
+ 
       <Header />
+      <Register/>
     </div>
   );
 };

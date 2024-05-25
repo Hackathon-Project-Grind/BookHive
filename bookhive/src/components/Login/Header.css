@@ -3,7 +3,7 @@
 .header {
     width: 627px;
     height: 103px;
-    position: absolute;
+    position: top;
     text-align: center;
     color: black;
     font-size: 48px;

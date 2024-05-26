@@ -14,8 +14,8 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'List Your Book',
-    path: '/listbooks',
+    title: 'List Your Books',
+    path: '/list',
     icon: <FaIcons.FaListUl/>,
     cName: 'nav-text'
   },

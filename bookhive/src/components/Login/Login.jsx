@@ -1,11 +1,13 @@
 import './Login.css';
 import logo from './assets/Logo.jpg'
-
 const Login = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, username) => {
     e.preventDefault();
     // Add your login logic here
     console.log('Login logic goes here');
+
+    // Navigate the username to the BookRequestCard component
+    Request(username);
   };
 
   return (
@@ -22,6 +24,7 @@ const Login = () => {
         <button type="submit">Login</button>
         <button type="submit">Register</button>
       </form>
+      <Request/>
     </div>
   );
 };

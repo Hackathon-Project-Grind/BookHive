@@ -2,14 +2,14 @@
 import React, { useState } from 'react';
 
 import './Home.css';
+
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [books, setBooks] = useState([
-    { id: 1, title: 'Book 1', author: 'Author 1', year: 2021, owner: 'Owner 1' },
-    { id: 2, title: 'Book 2', author: 'Author 2', year: 2022, owner: 'Owner 2' },
-    { id: 1, title: 'Book 3', author: 'Author 3', year: 1991, owner: 'Owner 1' },
-    { id: 2, title: 'Book 4', author: 'Author 4', year: 1962, owner: 'Owner 2' },
-    // Add more book data as needed
+    { id: 1, title: 'python', author: 'Author 1', year: 2021, owner: 'Owner 1' },
+    { id: 2, title: 'Ruby&Rail', author: 'Author 2', year: 2022, owner: 'Owner 2' },
+    { id: 3, title: 'Javascript', author: 'Author 3', year: 1991, owner: 'Owner 1' },
+    { id: 4, title: 'Java', author: 'Author 4', year: 1962, owner: 'Owner 2' },
   ]);
 
   const handleSearch = (e) => {
@@ -20,10 +20,19 @@ const Home = () => {
     book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const handleRequest = (id) => {
-    // Implement request handling logic here
-    console.log(`Requesting book with ID ${id}`);
+  const handleRequest = (title) => {
+    console.log(`Requesting book with title: ${title}`);
   };
+
+  const uniqueBookIds = new Set();
+  const uniqueFilteredBooks = [];
+
+  filteredBooks.forEach(book => {
+    if (!uniqueBookIds.has(book.id)) {
+      uniqueBookIds.add(book.id);
+      uniqueFilteredBooks.push(book);
+    }
+  });
 
   return (
     <div className="home-container">
@@ -36,7 +45,7 @@ const Home = () => {
         className="search-bar"
       />
       <div className="book-list">
-        {filteredBooks.map(book => (
+        {uniqueFilteredBooks.map(book => (
           <div key={book.id} className="book-card">
             <div className="book-details">
               <h2>Title: {book.title}</h2>
@@ -44,9 +53,12 @@ const Home = () => {
               <p>Year: {book.year}</p>
               <p>Owner: {book.owner}</p>
             </div>
-            <button className="request-button" onClick={() => handleRequest(book.id)}>Request</button>
+            <button className="request-button" onClick={() => handleRequest(book.title)}>Request</button>
           </div>
         ))}
+        {uniqueFilteredBooks.length === 0 && searchTerm && (
+          <p>No book found with the title '{searchTerm}'</p>
+        )}
       </div>
     </div>
   );

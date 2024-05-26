@@ -14,10 +14,10 @@ const Login = () => {
       <h1 className='heading'>Welcome to BookHive</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username:</label>
-        <input type="text" id="username" name="username" required />
+        <input type="text" id="username" name="username" placeholder='Username:' required />
         <br />
         <label htmlFor="password">Password:</label>
-        <input type="password" id="password" name="password" required />
+        <input type="password" id="password" name="password" placeholder='Password:' required />
         <br />
         <button type="submit">Login</button>
         <button type="submit">Register</button>

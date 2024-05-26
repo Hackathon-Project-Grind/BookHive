@@ -23,7 +23,7 @@ function Register(){
                 <label className='label5'>Enter Re-Enter Password : </label>
                 <input type="password"></input>
                 <br/>
-                <button className='RegBu'>Register</button>
+                <button className='RegBu' onClick={() => navigate('/login')}>Register</button>
                 
             </form>
         </div>

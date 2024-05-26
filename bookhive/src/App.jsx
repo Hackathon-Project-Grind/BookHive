@@ -6,6 +6,7 @@ import Navbar from './components/Navigation/Navbar.jsx'
 import Home from './Pages/Home.jsx';
 import Books from './Pages/Books.jsx';
 import './index.css';
+import Request from './Pages/Request.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {

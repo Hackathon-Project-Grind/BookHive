@@ -1,61 +1,96 @@
-/* src/styles/Login.css */
-
+/* Container */
 .login-container {
-    width: 377.09px;
-    padding-left: 37.87px;
-    padding-right: 37.87px;
-    padding-top: 22.09px;
-    padding-bottom: 22.09px;
-    left: 141px;
-    top: 754px;
-    position: absolute;
-    background: black;
-    box-shadow: 0px 1.5777777433395386px 3.155555486679077px rgba(0, 0, 0, 0.05);
-    border-radius: 12.62px;
-    justify-content: center;
-    align-items: center;
-    gap: 12.62px;
-    display: inline-flex;
-}
-
-.login-container form {
+    width: 100%;
+    max-width: 400px; /* Center container and limit its width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Soft background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center align children */
+    gap: 10px; /* More space between children */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
+.Logo {
+    width: 50px; /* Adjust the logo size */
+    height: auto;
+    margin-bottom: 50px; /* Space between logo and form */
+}
+
+/* Headings */
+.heading {
+    text-align: center;
+    margin: 0 0 15px;
+    color: #333; /* Softer black color */
+    font-size: 2em; /* Increase font size */
+    font-weight: bold; /* Make the heading bold */
+}
+
+/* Form */
+.login-container form {
+    width: 100%; /* Ensure form takes full width */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* More space between form elements */
+}
+
+/* Labels */
 .login-container label {
-    color: white;
-    font-size: 25.24px;
-    font-family: Inter;
-    font-weight: 500;
-    line-height: 37.87px;
-    word-wrap: break-word;
+    color: #666; /* Softer color */
+    font-size: 1em; /* Consistent font size */
+    font-family: 'Arial', sans-serif;
+    font-weight: 500; /* Medium weight */
 }
 
-.login-container input {
-    width: 100%;
-    padding: 18.93px;
-    background: white;
-    border-radius: 12.62px;
-    border: 1.58px #E0E0E0 solid;
-    margin-top: 12.62px;
+/* Input fields */
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    width: 95%;
+    padding: 8px; /* Adjusted padding */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease; /* Smooth transition */
 }
 
+.login-container input[type="text"]:focus, 
+.login-container input[type="password"]:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button */
 .login-container button {
-    width: 100%;
-    padding: 18.93px;
-    background: black;
-    color: white;
-    font-size: 25.24px;
-    font-family: Inter;
-    font-weight: 500;
-    line-height: 37.87px;
-    border-radius: 12.62px;
-    border: 1.58px #E0E0E0 solid;
-    margin-top: 12.62px;
+    background-color: #121213;
+    color: #fff;
+    padding: 10px 15px; /* Adjusted padding */
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 10px;
+
 }
 
 .login-container button:hover {
-    background: #828282;
+    background-color: #323232; /* Darker blue on hover */
+}
+
+.register-container button:hover {
+    background: #404041; /* Darker background on hover */
 }

@@ -17,8 +17,8 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #d14f4f;
+    border-radius: 5px;
   }
   
   .book-list {
@@ -47,6 +47,6 @@
   }
   
   .request-button:hover {
-    background-color: #0056b3;
+    background-color: #000000da;
   }
   

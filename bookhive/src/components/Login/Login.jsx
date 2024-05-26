@@ -1,13 +1,17 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
-import logo from './assets/Logo.jpg'
+import logo from './assets/Logo.jpg';
+
 const Login = () => {
-  const handleSubmit = (e, username) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your login logic here
+
     console.log('Login logic goes here');
 
-    // Navigate the username to the BookRequestCard component
-    Request(username);
+    navigate('/home');
   };
 
   return (
@@ -21,10 +25,9 @@ const Login = () => {
         <label htmlFor="password">Password:</label>
         <input type="password" id="password" name="password" placeholder='Password:' required />
         <br />
-        <button type="submit">Login</button>
-        <button type="submit">Register</button>
+        <button type="submit" onClick={() => navigate('/home')}>Login</button>
+        <button type="button" onClick={() => navigate('/register')}>Register</button>
       </form>
-      <Request/>
     </div>
   );
 };

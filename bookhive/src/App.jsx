@@ -5,17 +5,19 @@ import Home from './Pages/Home';
 
 import './App.css';
 import './index.css';
+import Navbar from './components/Navigation/Navbar';
 
 function App() {
   return (
     <Router>
       <div>
         <Routes>
+
           <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-    
           <Route path="/home" element={<Home />} />
+          
         </Routes>
       </div>
     </Router>

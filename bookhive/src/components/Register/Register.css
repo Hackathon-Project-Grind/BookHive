@@ -1,35 +1,46 @@
 /* Container */
 .register-container {
     width: 100%;
-    max-width: 600px; /* Center container and limit its width */
+    max-width: 600px;
+    /* Center container and limit its width */
     margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9; /* Soft background color */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #f9f9f9;
+    /* Soft background color */
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; /* Distribute space between elements */
-    min-height: 80vh; /* Ensure the container takes up most of the viewport height */
+    justify-content: space-around;
+    /* Distribute space between elements */
+    min-height: 80vh;
+    /* Ensure the container takes up most of the viewport height */
     box-sizing: border-box;
 }
 
 /* Logo */
 .Logo {
-    width: 50px; /* Adjust the logo size */
+    width: 50px;
+    /* Adjust the logo size */
     height: auto;
-    margin-bottom: 50px; /* Space between logo and form */
+    margin-bottom: 50px;
+    /* Space between logo and form */
 }
 
 /* Headings */
 .heading {
     text-align: center;
     margin: 0 0 20px;
-    color: #333; /* Softer black color */
-    font-size: 2em; /* Increase font size */
-    font-weight: bold; /* Make the heading bold */
+    color: #333;
+    /* Softer black color */
+    font-size: 2em;
+    /* Increase font size */
+    font-weight: bold;
+    /* Make the heading bold */
 }
 
 .heading2 {
@@ -46,19 +57,29 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 10px; /* Add space between form elements */
+    gap: 10px;
+    /* Add space between form elements */
 }
 
 /* Labels */
-.label1, .label2, .label3, .label4, .label5 {
+.label1,
+.label2,
+.label3,
+.label4,
+.label5 {
     margin-bottom: 5px;
-    color: #666; /* Softer color */
-    font-size: 1em; /* Consistent font size */
-    font-weight: 500; /* Medium weight */
+    color: #666;
+    /* Softer color */
+    font-size: 1em;
+    /* Consistent font size */
+    font-weight: 500;
+    /* Medium weight */
 }
 
 /* Input fields */
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"],
+input[type="email"] {
     width: 100%;
     max-width: 400px;
     padding: 12px;
@@ -68,12 +89,17 @@ input[type="text"], input[type="password"] {
     color: #333;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.3s ease; /* Smooth transition */
+    transition: border-color 0.3s ease;
+    /* Smooth transition */
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #007BFF; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #007BFF;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
 }
 
 /* Submit button */
@@ -88,14 +114,23 @@ input[type="text"]:focus, input[type="password"]:focus {
     max-width: 200px;
     font-size: 1em;
     font-weight: bold;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
 }
 
 .RegBu:hover {
-    background-color: #3d3c3c; /* Darker blue on hover */
+    background-color: #3d3c3c;
+    /* Darker blue on hover */
 }
 
-
 .register-container button:hover {
-    background: #403f3f; /* Darker background on hover */
+    background: #403f3f;
+    /* Darker background on hover */
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
 }
